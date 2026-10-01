@@ -1,110 +1,132 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nova Nexus Tech - Soluciones Corporativas</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer NS - Portfolio Visual</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- 1. NAVBAR CORPORATIVA -->
-  <header class="navbar">
-    <div class="logo">Nova<span>Nexus</span></div>
-    <nav>
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#equipo">Equipo</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <img src="logo.png" alt="Logo Developer NS" class="logo">
+    </header>
 
-  <!-- 2. HERO SECTION (La oficina de trinchera) -->
-  <section id="inicio" class="hero-section">
-    <div class="hero-content">
-      <h1>Ingeniería de Software para Empresas de Escala</h1>
-      <p>Desarrollamos infraestructura digital robusta, arquitecturas limpias y estrategias de marketing de alto impacto.</p>
-      <a href="#contacto" class="btn-primary">Consultar Presupuesto</a>
+    <!-- El resto del contenido del demo va a ir aca abajo -->
+<section id="welcome-section">
+    <div class="welcome-contenedor">
+        <h1>Desarrollo Web Profesional para tu Negocio</h1>
+        <p>Creamos pantallas atractivas, llamativas y 100% adaptadas a celulares, diseñadas exclusivamente para impulsar tus ventas y destacar tu marca.</p>
+        <a href="#projects" class="btn-bienvenida">Ver Demos del Catálogo</a>
     </div>
-    <div class="hero-img-container">
-      <img src="img/servicio codigo.png" alt="Estación de desarrollo de software en Nova Nexus Tech">
-    </div>
-  </section>
-
-  <!-- 3. SERVICES SECTION (Las dos tarjetas de servicios) -->
-  <section id="servicios" class="services-section">
-    <h2>Soluciones Tecnológicas Integrales</h2>
-    <p class="subtitle">Estructuramos el crecimiento técnico y comercial de tu compañía.</p>
+</section>
+<!-- Bloque 3: Grilla de Proyectos -->
+<section id="projects">
+    <h2 class="projects-title">Mis Modelos Disponibles</h2>
     
-    <div class="services-grid">
-      <!-- Servicio 1: Desarrollo -->
-      <div class="service-card">
-        <div class="card-img-wrapper">
-          <img src="img/agencia team.png" alt="Equipo de programadores escribiendo código">
+    <div class="projects-grid">
+        <!-- Tarjeta 1: Catálogo Digital -->
+        <div class="project-tile">
+            <img src="img/Modelo Catálogo  Polirrubro.png" alt="Vista Previa Catálogo" class="project-img">
+            <div class="project-img-placeholder">
+                 <a href="demos/catalogo de perfumes/index.html">[ Vista Previa Catálogo ]</a>
+            </div>
+            <div class="project-info">
+                <h3>Modelo Catálogo / Polirrubro</h3>
+                <p>Grilla dinámica ideal para mostrar stock, precios y botón directo de consulta a WhatsApp.</p>
+            </div>
         </div>
-        <h3>Desarrollo Web & Apps a Medida</h3>
-        <p>Código limpio, bases de datos optimizadas y sistemas escalables diseñados para soportar alta demanda transaccional.</p>
-      </div>
 
-      <!-- Servicio 2: Diseño y Marketing -->
-      <div class="service-card">
-        <div class="card-img-wrapper">
-          <img src="img/servicio diseno.png" alt="Diseño de interfaces UI/UX móviles">
+        <!-- Tarjeta 2: Landing Page -->
+        <div class="project-tile">
+            <img src="img/Modelo Landing Profesional.png" alt="Vista Previa Landing" class="project-img">
+            <div class="project-img-placeholder">
+                <!-- Buscá el enlace de la tarjeta 2 y dejalo configurado así -->
+<a href="demos/landing profesiona/index.html" class="tu-boton-violeta">Ver Demo en Vivo</a>
+
+            </div>
+            <div class="project-info">
+                <h3>Modelo Landing Profesional</h3>
+                <p>Estructura limpia de una sola pantalla para servicios, horarios y reserva estática de turnos.</p>
+            </div>
         </div>
-        <h3>Estrategia Digital & UI/UX</h3>
-        <p>Diseñamos experiencias visuales de alta conversión testeando interfaces interactivas en dispositivos móviles reales.</p>
-      </div>
+
+        <!-- Tarjeta 3: Web Institucional -->
+        <div class="project-tile">
+            <img src="img/Modelo Web Corporativa.png" alt="Vista Previa Institucional" class="project-img">
+            <div class="project-img-placeholder">
+                <a href="demos/web corporativa/index.html">[ Vista Previa Corporativa ]</a>
+            </div>
+            <div class="project-info">
+                <h3>Modelo Web Corporativa</h3>
+                <p>Presentación elegante para negocios con secciones fijas de Quiénes Somos, mapa y galería.</p>
+            </div>
+        </div>
     </div>
-  </section>
-
-  <!-- 4. TEAM SECTION (La reunión formal) -->
-  <section id="equipo" class="team-section">
-    <div class="team-grid">
-      <div class="team-text">
-        <h2>Consultoría Estratégica con Visión de Negocio</h2>
-        <p>En Nova Nexus Tech entendemos que el software debe responder a objetivos financieros reales. Nos sentamos con tu mesa de directorio a planificar la arquitectura ideal para automatizar procesos y expandir tus márgenes de ganancia.</p>
-        <div class="metrics-box">
-          <div class="metric-item"><h3>+150</h3><p>Proyectos IT</p></div>
-          <div class="metric-item"><h3>99%</h3><p>Fidelidad</p></div>
-        </div>
-      </div>
-      <div class="team-img">
-        <img src="img/agencia reunion.png" alt="Reunión de directorio analizando métricas de software">
-      </div>
-    </div>
-  </section>
-
-  <!-- 5. CONTACT SECTION (Catedral de San Pablo y Vidrios) -->
-  <section id="contacto" class="contact-section">
-    <div class="contact-container">
-      <div class="contact-box">
-        <h2>Alianzas Estratégicas</h2>
-        <p>Dejanos los datos de tu empresa y coordiná una reunión técnica de viabilidad.</p>
-        
-        <form class="corporate-form">
-          <label for="empresa">Razón Social / Empresa:</label>
-          <input type="text" id="empresa" required placeholder="Ej: Nexo Industrias S.A.">
-
-          <label for="alcance">Tipo de Proyecto:</label>
-          <select id="alcance" required>
-            <option value="" disabled selected>Seleccioná el alcance...</option>
-            <option value="Desarrollo e Infraestructura">Desarrollo Web & Infraestructura IT</option>
-            <option value="Consultoria y Diseño">Consultoría Estratégica UI/UX</option>
-          </select>
-
-          <label for="detalles">Requerimientos Iniciales:</label>
-          <textarea id="detalles" rows="3" placeholder="Describa brevemente los objetivos técnicos..."></textarea>
-
-          <button type="submit" class="btn-submit">Solicitar Reunión Corporativa</button>
+</section>
+<!-- Bloque 4: Formulario de contacto enviado por WhatsApp -->
+<section id="contact">
+    <h2 class="contact-title">¿Arrancamos tu Proyecto?</h2>
+    <p class="contact-subtitle">Completá los campos con tus datos y el detalle de lo que necesitás para que me llegue la información.</p>
+    
+    <div class="form-contenedor">
+        <!-- REEMPLAZÁ 'tu-mail-de-trabajo@gmail.com' por tu correo real -->
+        <form action="https://formspree.io" method="POST">
+            
+            <div class="grupo-input">
+                <label for="cliente-nombre">Nombre o Negocio</label>
+                <!-- Acá el cliente SÍ puede escribir con su teclado -->
+                <input type="text" name="Nombre_Negocio" id="cliente-nombre" placeholder="Ej. Perfumería Carlos" required>
+            </div>
+            
+            <div class="grupo-input">
+                <label for="cliente-mensaje">¿Qué tipo de catálogo o web necesitás?</label>
+                <!-- Acá también escribe libremente -->
+                <textarea name="Detalle_Proyecto" id="cliente-mensaje" rows="4" placeholder="Ej. Quiero una web llamativa con catálogo de perfumes..." required></textarea>
+            </div>
+            
+            <div class="grupo-input">
+                <label for="cliente-consulta">Tu Consulta</label>
+                <textarea name="Consulta" id="cliente-consulta" rows="3" placeholder="Ej. ¿Qué necesitás para armar eso y qué costo tendría?" required></textarea>
+            </div>
+            
+             <!-- LA SOLUCIÓN EN HTML PURO: El enlace directo usando href con tu número -->
+        <!-- REEMPLAZÁ '5491123456789' por tu número real de trabajo (sin el 15 y sin el 0) -->
+        <a href="https://wa.me/5491162035909?text=Hola%20Developer%20NS,%20quiero%20una%20web%20llamativa%20con%20catálogo%20de%20perfumes.%20¿Qué%20necesitás%20para%20armar%20eso%20y%20cuál%20sería%20el%20costo?" 
+           class="btn-enviar" 
+           target="_blank" 
+           style="display: inline-block; text-decoration: none; text-align: center;">
+            Enviar Consulta a mi WhatsApp
+            </button>
         </form>
-      </div>
     </div>
-    <div class="contact-bg">
-      <img src="img/agencia contacto.png" alt="Edificios corporativos e institucionales de Nova Nexus Tech">
-    </div>
-  </section>
+</section>
+
+
+<!-- Footer de Cierre -->
+<footer>
+    <p>&copy; 2026 developer ns. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+    const contactForm = document.querySelector("#contact-form");
+
+    contactForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const formData = new FormData(contactForm);
+        const message = [
+            "Hola Developer NS, quiero consultar por un proyecto web.",
+            "",
+            `Nombre o negocio: ${formData.get("Nombre_Negocio").trim()}`,
+            `Tipo de web o catálogo: ${formData.get("Detalle_Proyecto").trim()}`,
+            `Consulta: ${formData.get("Consulta").trim()}`
+        ].join("\n");
+
+        const whatsappUrl = `https://wa.me/5491162035909?text=${encodeURIComponent(message)}`;
+        window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+    });
+</script>
 
 </body>
 </html>
