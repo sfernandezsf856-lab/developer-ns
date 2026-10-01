@@ -1,0 +1,338 @@
+/* ==========================================================================
+   1. RESETEO Y CONFIGURACIÓN GENERAL (La base sólida)
+   ========================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth; /* Deslizamiento suave al tocar el menú */
+}
+
+body {
+  background-color: #0d0e12; /* Fondo oscuro profundo */
+  color: #f3f4f6; /* Texto claro */
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Recorta y encuadra la imagen sin deformarla */
+  display: block;
+}
+
+/* ==========================================================================
+   2. ENCABEZADO (Navbar estática y elegante)
+   ========================================================================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background-color: rgba(13, 14, 18, 0.95);
+  border-bottom: 1px solid #1f2937;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  color: #8b5cf6; /* Detalle violeta con tus iniciales */
+}
+
+.navbar nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.navbar nav a {
+  display: inline-block;
+  padding: 6px 0;
+  color: #9ca3af;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar nav a:hover {
+  color: #8b5cf6; /* Brillo violeta al pasar el mouse */
+}
+
+/* ==========================================================================
+   3. SECCIÓN INICIO (Hero con impacto visual)
+   ========================================================================== */
+.hero-section {
+  display: flex;
+  min-height: 85vh;
+  align-items: center;
+  padding: 40px 5%;
+  gap: 40px;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #ffffff, #a78bfa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-content p {
+  color: #9ca3af;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 14px 28px;
+  background-color: #8b5cf6;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(139, 92, 246, 0.4);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #7c3aed;
+  transform: translateY(-2px); /* Efecto sutil de elevación */
+}
+
+.hero-img-container {
+  flex: 1;
+  height: 450px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #2d3748;
+}
+
+/* ==========================================================================
+   4. SECCIÓN SERVICIOS (Grilla de Tarjetas Interactivas)
+   ========================================================================== */
+.services-section {
+  padding: 80px 5%;
+  background-color: #111319; /* Variación sutil de fondo */
+  text-align: center;
+}
+
+.services-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #9ca3af;
+  margin-bottom: 50px;
+}
+
+.services-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  background-color: #1f232b;
+  border: 1px solid #2d3748;
+  border-radius: 12px;
+  width: 350px;
+  overflow: hidden;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  border-color: #8b5cf6; /* La tarjeta se ilumina al interactuar */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.service-card img {
+  height: 220px;
+}
+
+.service-card h3 {
+  padding: 20px 20px 10px 20px;
+  font-size: 1.3rem;
+}
+
+.service-card p {
+  padding: 0 20px 20px 20px;
+  color: #9ca3af;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* ==========================================================================
+   5. SECCIÓN NOSOTROS (Bloque Simétrico)
+   ========================================================================== */
+.about-section {
+  padding: 80px 5%;
+}
+
+.about-grid {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.about-img {
+  flex: 1;
+  height: 400px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #2d3748;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  color: #9ca3af;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* ==========================================================================
+   6. SECCIÓN CONTACTO (Formulario Estético Premium)
+   ========================================================================== */
+.contact-section {
+  padding: 80px 5%;
+  background-color: #111319;
+}
+
+.contact-grid {
+  display: flex;
+  gap: 50px;
+}
+
+.contact-form-container {
+  flex: 1;
+}
+
+.contact-form-container h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.contact-form-container p {
+  color: #9ca3af;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #9ca3af;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  min-width: 0;
+  padding: 12px;
+  background-color: #1f232b;
+  border: 1px solid #2d3748;
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #8b5cf6; /* Foco violeta al escribir */
+}
+
+.btn-submit {
+  padding: 14px;
+  background-color: #8b5cf6;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(139, 92, 246, 0.3);
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.btn-submit:hover {
+  background-color: #7c3aed;
+}
+
+.contact-bg-img {
+  flex: 1;
+  height: 450px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #2d3748;
+}
+
+/* ==========================================================================
+   7. DISEÑO RESPONSIVO (Adaptabilidad Celular)
+   ========================================================================== */
+@media (max-width: 968px) {
+  .hero-section,
+  .about-grid,
+  .contact-grid {
+    flex-direction: column; /* Apila los elementos en vertical */
+    text-align: center;
+  }
+
+  .hero-img-container,
+  .about-img,
+  .contact-bg-img {
+    width: 100%;
+    height: 300px; /* Adapta la altura en pantallas chicas */
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .navbar nav ul {
+    gap: 15px;
+  }
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura Fragancias - Catálogo Digital</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 1. ENCABEZADO (Logo Dorado Elegant) -->
+  <header class="navbar">
+    <div class="logo">Aura <span>Fragancias</span></div>
+    <img src="logo.png" alt="Logo Aura" class="logo-img">
+    <nav>
+      <ul>
+        <li><a href="#hombre">Hombre</a></li>
+        <li><a href="#mujer">Mujer</a></li>
+        <li><a href="#pedido">Hacer Pedido</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 2. CATEGORÍA: FRAGANCIAS MASCULINAS (5 Tarjetas) -->
+  <section id="hombre" class="catalog-section">
+    <h2>Línea Masculina</h2>
+    <p class="subtitle">Fragancias intensas, sofisticadas y con alta fijación.</p>
+    
+    <div class="products-grid">
+      <div class="product-card">
+        <img src="img/hombre 1.png" alt="Fragancia Masculina 1">
+        <h3>Bleu de Chanel</h3>
+        <p>Notas amaderadas y cítricas. Elegancia pura para el día a día.</p>
+      </div>
+      <div class="product-card">
+        <img src="img/hombre 2.png" alt="Fragancia Masculina 2">
+        <h3>Sauvage Dior</h3>
+        <p>Un aroma rústico y fresco, ideal para la noche.</p>
+      </div>
+      <div class="product-card">
+        <img src="img/hombre 3.png" alt="Fragancia Masculina 3">
+        <h3>One Million</h3>
+        <p>Toques de cuero y mandarina. Un clásico imponente.</p>
+      </div>
+      <div class="product-card">
+        <img src="img/hombre 4.png" alt="Fragancia Masculina 4">
+        <h3>Acqua di Gio</h3>
+        <p>Frescura marina y cítrica para una presencia limpia.</p>
+      </div>
+      <div class="product-card">
+        <img src="img/hombre 5.png" alt="Fragancia Masculina 5">
+        <h3>Invictus</h3>
+        <p>Energía pura con notas de pomelo y madera de guayaco.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. CATEGORÍA: FRAGANCIAS FEMENINAS (5 Tarjetas) -->
+  <section id="mujer" class="catalog-section">
+    <h2>Línea Femenina</h2>
+    <p class="subtitle">Fragancias dulces, florales y de alta costura.</p>
+    
+    <div class="products-grid">
+      <div class="product-card">
+        <img src="img/mujer 1.png" alt="Fragancia Femenina 1">
+        <h3>Good Girl C.H.</h3>
+        <p>Sensualidad y misterio con notas de nardos y cacao tostado.</p>
+      </div>
+      <div class="product-card">
+        <img src="img/mujer 2.png" alt="Fragancia Femenina 2">
+        <h3>La Vie Est Belle</h3>
+        <p>Un buqué de flores dulces, elegante y súper persistente.</p>
+      </div>
+      <div class="product-card">
+        <img src="img/mujer 3.png" alt="Fragancia Femenina 3">
+        <h3>Chanel N°5</h3>
+        <p>El clásico definitivo. Sofisticación floral abstracta.</p>
+      </div>
+      <div class="product-card">
+        <img src="img/mujer 4.png" alt="Fragancia Femenina 4">
+        <h3>J'adore Dior</h3>
+        <p>Un ramo floral dorado, luminoso y ultra femenino.</p>
+      </div>
+      <div class="product-card">
+        <img src="img/mujer 5.png" alt="Fragancia Femenina 5">
+        <h3>Black Opium</h3>
+        <p>Adictivo toque de café negro, vainilla y flores blancas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. SECCIÓN PEDIDO (Formulario a WhatsApp) -->
+  <section id="pedido" class="order-section">
+    <div class="order-box">
+      <h2>Armá tu Pedido</h2>
+      <p>Seleccioná tus fragancias del catálogo y envianos el formulario para coordinar la entrega directa.</p>
+      
+      <form class="whatsapp-form">
+        <label for="cliente">Tu Nombre:</label>
+        <input type="text" id="cliente" required placeholder="Ej: Seba Developer">
+
+        <label for="linea">Línea de Interés:</label>
+        <select id="linea" required>
+          <option value="" disabled selected>Seleccioná una línea...</option>
+          <option value="Fragancias Masculinas">Fragancias Masculinas</option>
+          <option value="Fragancias Femeninas">Fragancias Femeninas</option>
+          <option value="Ambas Líneas">Quiero de Ambas Líneas</option>
+        </select>
+
+        <label for="detalle">Perfumes Seleccionados:</label>
+        <textarea id="detalle" rows="3" required placeholder="Ej: 1 Sauvage Dior y 1 Good Girl..."></textarea>
+
+        <button type="submit" class="btn-submit">Enviar Pedido por WhatsApp</button>
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>

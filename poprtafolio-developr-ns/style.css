@@ -1,0 +1,311 @@
+/* 1. Reseteo de fábrica (Para que nada se desfase) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 2. El cuerpo de la página (Fondo oscuro tipo búnker) */
+body {
+    background-color: #1a1a1a; /* Un gris oscuro mate muy elegante */
+    color: #ffffff;
+}
+
+/* 3. El Encabezado (Donde va a flotar el logo) */
+header {
+    background-color: #111111; /* Un negro más profundo para hacer contraste */
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alinea el logo a la izquierda */
+    border-bottom: 2px solid #5a2d87; /* Una sutil línea morada como la del logo */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* 4. El control quirúrgico del Logo (Para que no se vuela enorme) */
+.logo {
+    height: 60px; /* Le fijamos una altura prolija */
+    width: auto;  /* Mantiene la proporción perfecta sin deformarse */
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto sutil al pasar el mouse por arriba */
+.logo:hover {
+    transform: scale(1.05); 
+}
+/* 5. Sección de Bienvenida */
+#welcome-section {
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #1a1a1a 0%, #111111 100%);
+}
+
+.welcome-contenedor {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#welcome-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+#welcome-section p {
+    font-size: 1.2rem;
+    color: #cccccc;
+    margin-bottom: 35px;
+    line-height: 1.6;
+}
+
+/* El botón principal de llamada a la acción */
+.btn-bienvenida {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #5a2d87; /* Morado haciendo juego con el circuito */
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(90, 45, 135, 0.4);
+    transition: all 0.3s ease;
+}
+
+.btn-bienvenida:hover {
+    background-color: #7038a6;
+    transform: translateY(-3px); /* Efecto de flotado sutil */
+    box-shadow: 0 6px 20px rgba(90, 45, 135, 0.6);
+}
+/* 6. Grilla de Proyectos */
+#projects {
+    padding: 60px 20px;
+    background-color: #1a1a1a;
+    text-align: center;
+}
+
+.projects-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #ffffff;
+    position: relative;
+}
+
+/* La magia de la grilla responsiva automática */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cada tarjeta individual */
+.project-tile {
+    background-color: #111111;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.project-tile:hover {
+    transform: translateY(-5px);
+    border-color: #5a2d87; /* Resalta en morado al pasar el mouse */
+}
+
+/* Caja gris temporal para simular las fotos de los demos */
+.project-img-placeholder {
+    width: 100%;
+    height: 200px;
+    background-color: #222222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888888;
+    font-weight: bold;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #333333;
+}
+
+.project-img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    background-color: #222222;
+    border-bottom: 1px solid #333333;
+}
+
+.project-info {
+    padding: 20px;
+    text-align: left;
+}
+
+.project-info h3 {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    font-size: 0.95rem;
+    color: #aaaaaa;
+    line-height: 1.5;
+}
+/* 7. Sección de Contacto */
+#contact {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #111111 0%, #1a1a1a 100%);
+    text-align: center;
+    border-top: 1px solid #333333;
+}
+
+.contact-title {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.contact-subtitle {
+    font-size: 1rem;
+    color: #aaaaaa;
+    margin-bottom: 40px;
+}
+
+.form-contenedor {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #111111;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #222222;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+.grupo-input {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.grupo-input label {
+    display: block;
+    font-size: 0.9rem;
+    color: #cccccc;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Estilo para las cajas de texto e inputs */
+.grupo-input input,
+.grupo-input textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #1a1a1a;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.grupo-input input:focus,
+.grupo-input textarea:focus {
+    outline: none;
+    border-color: #5a2d87; /* Brillo morado al hacer foco */
+}
+
+/* Botón de envío */
+.btn-enviar {
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+    background-color: #5a2d87;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(90, 45, 135, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn-enviar:hover {
+    background-color: #7038a6;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(90, 45, 135, 0.5);
+}
+
+/* 8. Footer Fijo */
+footer {
+    background-color: #0a0a0a;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #111111;
+}
+
+footer p {
+    font-size: 0.85rem;
+    color: #666666;
+}
+/* Estilo del botón de enlace directo */
+.btn-enviar {
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+    background-color: #5a2d87; /* El morado búnker que hace juego con tu logo */
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(90, 45, 135, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn-enviar:hover {
+    background-color: #7038a6;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(90, 45, 135, 0.5);
+}
+
+s/* Accesibilidad y ajustes para pantallas pequeñas */
+a:focus-visible {
+    outline: 3px solid #c9a7ee;
+    outline-offset: 4px;
+}
+
+@media (max-width: 600px) {
+    header {
+        justify-content: center;
+    }
+
+    #welcome-section {
+        padding: 64px 20px;
+    }
+
+    #welcome-section h1 {
+        font-size: clamp(2rem, 9vw, 2.5rem);
+    }
+
+    #welcome-section p {
+        font-size: 1.05rem;
+    }
+
+    #projects,
+    #contact {
+        padding: 48px 18px;
+    }
+
+    .projects-grid {
+        gap: 20px;
+    }
+
+    .form-contenedor {
+        padding: 22px;
+    }
+}
