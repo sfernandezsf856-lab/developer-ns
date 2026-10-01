@@ -273,7 +273,7 @@ footer p {
     box-shadow: 0 6px 20px rgba(90, 45, 135, 0.5);
 }
 
-s/* Accesibilidad y ajustes para pantallas pequeñas */
+/* Accesibilidad y ajustes para pantallas pequeñas */
 a:focus-visible {
     outline: 3px solid #c9a7ee;
     outline-offset: 4px;
