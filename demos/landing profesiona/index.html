@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dental Studio NS - Odontología Estética</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 1. ENCABEZADO (Menú de Navegación) -->
+  <header class="navbar">
+    <div class="logo">Dental Studio <span>NS</span></div>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 2. SECCIÓN INICIO (Hero con foto de portada) -->
+  <section id="inicio" class="hero-section">
+    <div class="hero-content">
+      <h1>Tu sonrisa merece tecnología y profesionalismo</h1>
+      <p>Especialistas en odontología estética y diseño de sonrisas con equipamiento digital de última generación.</p>
+      <a href="#contacto" class="btn-primary">Agendar Turno</a>
+    </div>
+    <div class="hero-img-container">
+      <img src="img/hero.png" alt="Paciente sonriendo en Dental Studio NS">
+    </div>
+  </section>
+
+  <!-- 3. SECCIÓN SERVICIOS (Las Tarjetas de Especialidades) -->
+  <section id="servicios" class="services-section">
+    <h2>Nuestras Especialidades</h2>
+    <p class="subtitle">Tecnología de vanguardia para el cuidado de tu salud estética verbal.</p>
+    
+    <div class="services-grid">
+      <!-- Tarjeta 1: Ortodoncia Invisible -->
+      <div class="service-card">
+        <img src="img/servicio de ortodoncia.png" alt="Tratamiento de Ortodoncia Invisible">
+        <h3>Alineadores Invisibles</h3>
+        <p>Ortodoncia moderna, estética y removible. Diseñamos tu tratamiento de forma 100% digital.</p>
+      </div>
+
+      <!-- Tarjeta 2: Diagnóstico Digital -->
+      <div class="service-card">
+        <img src="img/servicio de diagnostico.png" alt="Escáner y Diagnóstico Digital 3D">
+        <h3>Diagnóstico Digital 3D</h3>
+        <p>Planificación milimétrica mediante escáneres de alta definición para garantizar resultados perfectos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. SECCIÓN NOSOTROS (Confianza y Trayectoria) -->
+  <section id="nosotros" class="about-section">
+    <div class="about-grid">
+      <div class="about-img">
+        <img src="img/odontologo.png" alt="Odontólogo Especialista de Dental Studio NS">
+      </div>
+      <div class="about-text">
+        <h2>Un espacio pensado para tu tranquilidad</h2>
+        <p>En Dental Studio NS fusionamos la calidez humana con los últimos avances científicos. Nos tomamos el tiempo necesario para estudiar cada caso de forma aislada, garantizando un tratamiento honesto, transparente y sin sorpresas.</p>
+        <p>Nuestra misión es que recuperes la confianza en tu sonrisa en un ambiente clínico impecable, moderno y diseñado para tu máximo confort.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. SECCIÓN CONTACTO (Formulario integrado a WhatsApp) -->
+  <section id="contacto" class="contact-section">
+    <div class="contact-grid">
+      <div class="contact-form-container">
+        <h2>Solicitá tu Consulta de Prueba</h2>
+        <p>Completá el formulario y coordiná tu turno directo por WhatsApp en un click.</p>
+        
+        <form action="#" class="contact-form">
+          <label for="nombre">Nombre Completo:</label>
+          <input type="text" id="nombre" required placeholder="Ej: Seba Developer">
+
+          <label for="servicio">Tratamiento de Interés:</label>
+          <select id="servicio" required>
+            <option value="" disabled selected>Seleccioná una opción...</option>
+            <option value="Alineadores Invisibles">Alineadores Invisibles</option>
+            <option value="Diagnostico Digital 3D">Diagnóstico Digital 3D</option>
+            <option value="Consulta Estética General">Consulta Estética General</option>
+          </select>
+
+          <label for="mensaje">Consulta o Mensaje Extra:</label>
+          <textarea id="mensaje" rows="4" placeholder="Dejanos tu consulta aquí..."></textarea>
+
+          <button type="submit" class="btn-submit">Solicitar Turno por WhatsApp</button>
+        </form>
+      </div>
+      <div class="contact-bg-img">
+        <img src="img/consultorio .png" alt="Instalaciones de Dental Studio NS">
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
