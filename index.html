@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nova Nexus Tech - Soluciones Corporativas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 1. NAVBAR CORPORATIVA -->
+  <header class="navbar">
+    <div class="logo">Nova<span>Nexus</span></div>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#equipo">Equipo</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 2. HERO SECTION (La oficina de trinchera) -->
+  <section id="inicio" class="hero-section">
+    <div class="hero-content">
+      <h1>Ingeniería de Software para Empresas de Escala</h1>
+      <p>Desarrollamos infraestructura digital robusta, arquitecturas limpias y estrategias de marketing de alto impacto.</p>
+      <a href="#contacto" class="btn-primary">Consultar Presupuesto</a>
+    </div>
+    <div class="hero-img-container">
+      <img src="img/servicio codigo.png" alt="Estación de desarrollo de software en Nova Nexus Tech">
+    </div>
+  </section>
+
+  <!-- 3. SERVICES SECTION (Las dos tarjetas de servicios) -->
+  <section id="servicios" class="services-section">
+    <h2>Soluciones Tecnológicas Integrales</h2>
+    <p class="subtitle">Estructuramos el crecimiento técnico y comercial de tu compañía.</p>
+    
+    <div class="services-grid">
+      <!-- Servicio 1: Desarrollo -->
+      <div class="service-card">
+        <div class="card-img-wrapper">
+          <img src="img/agencia team.png" alt="Equipo de programadores escribiendo código">
+        </div>
+        <h3>Desarrollo Web & Apps a Medida</h3>
+        <p>Código limpio, bases de datos optimizadas y sistemas escalables diseñados para soportar alta demanda transaccional.</p>
+      </div>
+
+      <!-- Servicio 2: Diseño y Marketing -->
+      <div class="service-card">
+        <div class="card-img-wrapper">
+          <img src="img/servicio diseno.png" alt="Diseño de interfaces UI/UX móviles">
+        </div>
+        <h3>Estrategia Digital & UI/UX</h3>
+        <p>Diseñamos experiencias visuales de alta conversión testeando interfaces interactivas en dispositivos móviles reales.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. TEAM SECTION (La reunión formal) -->
+  <section id="equipo" class="team-section">
+    <div class="team-grid">
+      <div class="team-text">
+        <h2>Consultoría Estratégica con Visión de Negocio</h2>
+        <p>En Nova Nexus Tech entendemos que el software debe responder a objetivos financieros reales. Nos sentamos con tu mesa de directorio a planificar la arquitectura ideal para automatizar procesos y expandir tus márgenes de ganancia.</p>
+        <div class="metrics-box">
+          <div class="metric-item"><h3>+150</h3><p>Proyectos IT</p></div>
+          <div class="metric-item"><h3>99%</h3><p>Fidelidad</p></div>
+        </div>
+      </div>
+      <div class="team-img">
+        <img src="img/agencia reunion.png" alt="Reunión de directorio analizando métricas de software">
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. CONTACT SECTION (Catedral de San Pablo y Vidrios) -->
+  <section id="contacto" class="contact-section">
+    <div class="contact-container">
+      <div class="contact-box">
+        <h2>Alianzas Estratégicas</h2>
+        <p>Dejanos los datos de tu empresa y coordiná una reunión técnica de viabilidad.</p>
+        
+        <form class="corporate-form">
+          <label for="empresa">Razón Social / Empresa:</label>
+          <input type="text" id="empresa" required placeholder="Ej: Nexo Industrias S.A.">
+
+          <label for="alcance">Tipo de Proyecto:</label>
+          <select id="alcance" required>
+            <option value="" disabled selected>Seleccioná el alcance...</option>
+            <option value="Desarrollo e Infraestructura">Desarrollo Web & Infraestructura IT</option>
+            <option value="Consultoria y Diseño">Consultoría Estratégica UI/UX</option>
+          </select>
+
+          <label for="detalles">Requerimientos Iniciales:</label>
+          <textarea id="detalles" rows="3" placeholder="Describa brevemente los objetivos técnicos..."></textarea>
+
+          <button type="submit" class="btn-submit">Solicitar Reunión Corporativa</button>
+        </form>
+      </div>
+    </div>
+    <div class="contact-bg">
+      <img src="img/agencia contacto.png" alt="Edificios corporativos e institucionales de Nova Nexus Tech">
+    </div>
+  </section>
+
+</body>
+</html>
